@@ -1,0 +1,27 @@
+/* List item container */
+.item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.2);
+}
+
+/* Author, comments, and points */
+.item span:nth-child(2),
+.item span:nth-child(3),
+.item span:nth-child(4) {
+  font-size: 0.95rem;
+  color: #272727;
+}

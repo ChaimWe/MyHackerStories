@@ -1,0 +1,82 @@
+/* Form container */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 0.75rem; /* Controls spacing between input and buttons */
+}
+
+/* Label styling (if used outside InputWithLabel) */
+label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Button group wrapper */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+/* Shared button styles */
+.searchButton,
+.clrSearch {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Search button styling */
+.searchButton {
+  background-color: #3b82f6;
+}
+
+.searchButton:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.searchButton:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+/* Clear button styling */
+.clrSearch {
+  background-color: #ef4444;
+}
+
+.clrSearch:disabled {
+  background-color: #fca5a5;
+  cursor: not-allowed;
+}
+
+.clrSearch:hover:not(:disabled) {
+  background-color: #dc2626;
+}
